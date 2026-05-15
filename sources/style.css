@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg:#0d1b2a;
+    --card:#415a77;
+    --text:#e0e1dd;
+    --btn:#778da9;
+
+    --space-md:1rem;
+    --space-sm:0.5rem;
+
+    --font:"Bricolage Grotesque", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: var(--font);
+    color: var(--text);
+    background-color: var(--bg);
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 900;
+    text-shadow: 2px 2px var(--bg);
+}
+body div{
+    position: relative;
+    width: 351px;
+    height: 760px;
+    padding: 3rem;
+    background-color: var(--card);
+    border: var(--space-sm) solid var(--text);
+    border-radius: var(--space-md);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-md);
+    box-shadow: 2rem 2rem 6rem black;
+}
+
+div button{
+    background-color: var(--btn);
+    color: var(--bg);
+    padding: var(--space-md);
+    border-radius: var(--space-md);
+    transition-duration: 0.4s;
+}
+
+button:hover{
+    background-color: var(--bg);
+    color: var(--btn);
+}
+
+#resta {
+    position: absolute;
+    bottom: var(--space-md);
+    left: var(--space-md);
+}
+
+#scappa {
+    position: absolute;
+    bottom: var(--space-md);
+    right: var(--space-md);
+    transition: top 0.02s, left 0.02s;
+}
+
+
+#rispostaSi:empty, #rispostaNo:empty{
+    border: none;
+    background-color: var(--bg);
+}
+
+
+
+
+
