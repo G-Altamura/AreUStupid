@@ -76,11 +76,6 @@ button:hover{
 }
 
 
-#rispostaSi:empty, #rispostaNo:empty{
-    border: none;
-    background-color: var(--bg);
-}
-
 
 
 
